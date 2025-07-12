@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(130, 168, 233);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #bgvideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        header {
+            background-color: darkcyan;
+            color: whitesmoke;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu-section {
+            padding: 40px 20px;
+            flex: 1;
+        }
+
+        .menu-section h2 {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(218, 24, 24, 0.1);
+            transition: transform 0.3s;
+            height: 300px; /* Fixed height for consistent layout */
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: rgb(239, 241, 243);
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="bgvideo">
+        <source src="C:\Users\jahna\OneDrive\Documents\codehtml\html\day 3\13966549_1920_1080_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to J-Mart</h1>
+        <p>All your needs at one shop</p>
+        <nav>
+            <a href="#">Items</a>
+            <a href="#">Contacts</a>
+            <a href="#">Services</a>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <div class="menu-section">
+        <h2>Grocery</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+              <a href="atta.html">  <img src="https://www.pillsbury.in/wp-content/uploads/2021/09/Organic-Atta_LS.jpg" alt="Fresh wheat flour"></a>
+                <h3>Atta</h3>
+                <p>Fresh wheat flour</p>
+                <span>$5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="choco.html"><img src="https://th.bing.com/th/id/OIP.0v5CJd6tKgAyP7BbptR0HwHaEK?w=286&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Chocolates"></a>
+                <h3>Chocolates</h3>
+                <p>Very sweet chocolates</p>
+                <span>$3.2</span>
+            </div>
+            <div class ="menu-item">
+               <a href="watches.html"><img src="https://th.bing.com/th/id/OIP.FifjZl6OXXZ6cQmxRqX4CQHaE8?w=262&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt=""></a> 
+                <h3>watches</h3>
+                <p>unique and style</p>
+                <span>$19</span>
+
+            </div>
+            <div class="menu-item">
+                <a href="clothes.html"><img src="https://th.bing.com/th/id/OIP.dy95VE-wxNp6Yh7RAyBhpwHaE8?w=294&h=195&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Comfortable clothes"></a>
+                <h3>Clothes</h3>
+                <p>Comfortable and affordable</p>
+                <span>$12.5</span>
+            </div>
+        </div>
+
+        <h2>Sports</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="shoes.html"><img src="https://tse4.mm.bing.net/th/id/OIP.PhV5SpzcvUFjD5p9kcw_PQHaHa?pid=Api&P=0&h=180" alt="Running shoes"></a>
+                <h3>Running Shoes</h3>
+                <p>High quality sports shoes</p>
+                <span>$6.6</span>
+            </div>
+            <div class="menu-item">
+               <a href="bates.html"> <img src="https://img.freepik.com/free-photo/cricket-bats-balls-3d-illustration-top-view_1057-36637.jpg?size=626" alt="Cricket bat"></a>
+                <h3>Cricket Bat</h3>
+                <p>Professional grade</p>
+                <span>$7.6</span>
+            </div>
+            <div class = "menu-item">
+               <a href="basket.html"> <img src="https://th.bing.com/th/id/OIP.0pnDwbt4fqq4HoPaafIZHQHaEy?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></a>
+                <h3>Basket Ball</h3>
+                <p>Highly recommended for kids</p>
+                <span>$4</span>
+            
+            </div>
+        </div>
+
+        <h2>Milk Products</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+               <a href="https://th.bing.com/th/id/OIP.GzGNGgCVx_hKER91QnlZEAHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"><img src="https://th.bing.com/th/id/OIP.qrw7GI0pFebYiskpR1jgVAHaE7?w=294&h=196&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Amul milk"></a>
+                <h3>Amul Milk</h3>
+                <p>Fresh dairy product</p>
+                <span>$2.0</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://ts1.mm.bing.net/th?id=OIP.BEAVYhXgVWJlt6owuFR_FAHaEK&pid=15.1" alt="Curd">
+                <h3>Curd</h3>
+                <p>Thick and creamy</p>
+                <span>$1.8</span>
+            </div>
+            <div class="menu-item">
+               <a href="lassi.html"> <img src="https://image.shutterstock.com/image-photo/lassi-popular-traditional-dahi-yogurtbased-260nw-1510725740.jpg" alt=""></a>
+                <h3>Lassi</h3>
+                <p>Gives energy and have good taste</p>
+                <span>$2.3</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.BPltKgQ9i-orbXWWx6I9NAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                <h3>Cheese</h3>
+                <p>Good taste</p>
+                <span>$6.8</span>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 J-Mart Shopping! More</p>
+        <p>Follow us on <a href="https://www.j-mart.com">www.emart.com</a></p>
+    </footer>
+</body>
+</html>
